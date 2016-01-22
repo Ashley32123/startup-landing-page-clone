@@ -1,0 +1,99 @@
+html {
+      box-sizing: border-box;
+  }
+
+ *, *:before, *:after {
+ 	box-sizing: inherit;
+ }
+
+.top-navigation {
+	background-color: #fff;
+}
+
+.content {
+	width: 970px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+}
+ .top-navigation .logo {
+ 	height: 70px;
+ }
+
+.top-navigation .links li{
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.top-navigation .links li:hover{
+  cursor: pointer;
+  color: #333333
+}
+
+.top-navigation .links > .active {
+  font-weight: 500;
+  color: #4c5058;
+}
+
+.top-navigation .links {
+	float: right;
+	font-family: 'roboto', sans-serif;
+	color: #838994;
+	font-size: 16px;
+	margin-top: 25px;
+	-webkit-font-smoothing:antialiased;
+}
+
+.introduction .content h1 {
+	margin-top: 280px;
+	font-size: 3.125rem;
+}
+
+.introduction .content h2 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+.introduction h1, .introduction h2 {
+	color: white;
+	text-align: center;
+	font-weight: 200;
+	font-family: 'roboto', sans-serif;
+}
+
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size:1.125rem;
+
+}
+
+.introduction .buttons {
+	margin-top: 1.563rem;
+	text-align: center;
+	color:white;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+}
+
+.introduction div {
+	display: block;
+}
+
+.introduction {
+	background-image: url('images/firstbackgroundcopy.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 45.938rem;
+	overflow: auto;
+}
