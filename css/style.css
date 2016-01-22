@@ -97,3 +97,32 @@ button:hover {
 	height: 45.938rem;
 	overflow: auto;
 }
+
+.cases {
+	background-color: #fff;
+	padding-bottom: 80px;
+}
+
+.devices li {
+	display: inline-block;
+}
+
+.cases h3 { 
+    font-size: 2.75rem;
+    margin:1.625rem 0 3.125rem;
+    font-weight: 300;
+    font-family: 'roboto', sans-serif;
+}
+
+.cases .content {
+	text-align: center;
+	margin-top: 126px;
+	color: black;
+}
+
+.cases .devices h4 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin:2.5rem 0px 1.875rem;
+	font-family: 'roboto', sans-serif;
+}
