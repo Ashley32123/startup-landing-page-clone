@@ -58,7 +58,7 @@ html {
 .introduction h1, .introduction h2 {
 	color: white;
 	text-align: center;
-	font-weight: 200;
+	font-weight: 100;
 	font-family: 'roboto', sans-serif;
 }
 
@@ -130,7 +130,7 @@ button:hover {
 .social {
 	background-color: #fff;
 	overflow: auto;
-	padding-bottom:9.375rem;
+	padding-bottom: 9.375rem;
 	text-align: center;
 }
 
