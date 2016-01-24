@@ -2,21 +2,41 @@ html {
       box-sizing: border-box;
   }
 
- *, *:before, *:after {
- 	box-sizing: inherit;
- }
+
 
 .top-navigation {
 	background-color: #fff;
 }
 
+body {
+	font-family: 'roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
 .content {
-	width: 970px;
-    height: 70px;
     margin: 0 auto;
     padding: 0px 15px;
+    min-width: 37.5rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
 
 }
+
+.top-navigation {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+
+.top-navigation > .content {
+	height: 4.375rem;
+}
+
  .top-navigation .logo {
  	height: 70px;
  }
@@ -38,11 +58,10 @@ html {
 
 .top-navigation .links {
 	float: right;
-	font-family: 'roboto', sans-serif;
 	color: #838994;
 	font-size: 16px;
 	margin-top: 25px;
-	-webkit-font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 .introduction .content h1 {
@@ -59,7 +78,6 @@ html {
 	color: white;
 	text-align: center;
 	font-weight: 100;
-	font-family: 'roboto', sans-serif;
 }
 
 button {
@@ -98,49 +116,72 @@ button:hover {
 	overflow: auto;
 }
 
+/**
+  * Three Case Images
+  */
+
+
+
 .cases {
 	background-color: #fff;
 	padding-bottom: 80px;
+	overflow: hidden;
 }
 
-.devices li {
-	display: inline-block;
-}
 
-.cases h3 { 
-    font-size: 2.75rem;
-    margin:1.625rem 0 3.125rem;
-    font-weight: 300;
-    font-family: 'roboto', sans-serif;
-}
 
 .cases .content {
 	text-align: center;
 	margin-top: 126px;
 	color: black;
+	padding: none;
 }
+
+
+
+
+.cases h3 { 
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+
+.cases .devices > li {
+	width: 33.3333333%;
+	float: left;
+	
+}
+
+
 
 .cases .devices h4 {
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin:2.5rem 0px 1.875rem;
-	font-family: 'roboto', sans-serif;
+	margin: 2.5rem 0px 1.875rem;
 }
+
+
 
 .social {
 	background-color: #fff;
-	overflow: auto;
 	padding-bottom: 9.375rem;
 	text-align: center;
+	padding-bottom: 0;
 }
 
 
 .social .hr {
 	border:0;
 	border-top: 1px solid #eaebec;
-	margin 1.313rem 0;
+	margin: 1.313rem 0;
 }
-.social .icons > li {
+
+.social .icons {
+	margin: 0;
+}
+
+.social .icons >li {
 	display: inline-block;
 	text-align: center;
 	border-radius: 1.25rem;
@@ -149,6 +190,29 @@ button:hover {
 	margin: 1.25rem 5px;
 	border:1px solid #eaebec;
 	padding: 0.625rem 0;
+	box-sizing:border-box;
+}
+
+.social .icons >li:hover {
+	cursor: pointer;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+
+.social .facebook {
+	color: #4c66a4;
+}
+
+.social .instagram {
+	color: #3f729b;
+}
+
+h5 {
+	font-size: 1.0em;
+	font-weight: 200;
+	margin: 0;
 }
 
 .social .copy {
@@ -157,6 +221,9 @@ button:hover {
 	color: #838994;
 }
 
-.icons {
-	padding-left: 0px;
+@media (min-width: 75rem) {
+    .content {
+        width: 60%;
+    }
 }
+
